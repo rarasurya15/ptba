@@ -12,4 +12,7 @@ class Admin extends Model
     protected $primaryKey = 'nim'; 
     public $incrementing = false; 
     protected $keyType = 'string';
+
+    //ini contoh commit
+    
 }

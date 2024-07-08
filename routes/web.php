@@ -34,7 +34,7 @@ Route::get('/email/verify', function () {
 })->middleware('auth')->name('verification.notice');
 
 
-Route::get('/Logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
+Route::get('/logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
 Route::get('/Register', 'App\Http\Controllers\AuthController@registerview')->name('register.view');
 Route::post('/Register', 'App\Http\Controllers\AuthController@register')->name('register');
 Route::get('/Admin', 'App\Http\Controllers\AdminController@index')->middleware('auth');
